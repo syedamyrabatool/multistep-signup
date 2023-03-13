@@ -1,0 +1,163 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #18139d;
+$secondary-color: #d10a0a;
+$tertiary-color: #fff;
+$disabled-color: #ccc;
+
+.App {
+  text-align: center;
+
+  .App-header {
+    background-color: $primary-color;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+    font-family: $font-stack;
+  }
+
+  .form-container {    
+    .heading-1 {
+      font-size: 22px;
+      font-weight: bolder;
+      padding: 10px;
+      margin: 10px;
+      display: block;
+    }
+    .user-details {
+      border: 3px solid $primary-color;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 40%;
+      margin: 12px auto;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      border-radius: 4px;
+
+      @media only screen and (max-width: 415px) {
+        width: 80%;
+      }
+
+      .progress{
+        margin-bottom: 12px;
+        border: $secondary-color;
+        width: 100%;
+        height: 5px;
+        background: $secondary-color;
+      }
+      .progress-33{
+        width: 33%;
+      }
+      
+      .progress-66{
+        width: 66%;
+      }
+      .progress-99{
+        width: 100%;
+      }
+      .personal-details, .contact-details, .security-details {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+      }
+      .form-input{
+        margin: auto;
+        padding: 5px;
+        display: flex;
+        span, label {
+          float: right;
+          padding: 5px;
+          margin: 15px 5px 15px 25px;
+          text-align: left;
+          width: 8em;
+        }
+        input.textfield, select {
+          float: left;
+          padding: 5px;
+          margin: 15px 15px 15px 25px;
+          width: 50%;
+        }
+      }
+      input.checkbox {
+        vertical-align: middle;
+        float: left;
+      }
+    }
+  }
+
+  .summary-tab {
+      border: 3px solid $primary-color;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 40%;
+      margin: auto;
+      padding:5vh;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      border-radius: 4px;
+ 
+      @media only screen and (max-width: 415px) {
+        width: 80%;
+      }
+      p {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+      }
+    span {
+      padding: 10px;
+      width: 50%;
+      flex-direction: column;
+      text-align: left;
+      &:nth-of-type(even){
+        margin-right: 15%;
+        }
+       &:nth-of-type(odd){
+        margin: auto 15%;
+        text-align: left;
+      }
+    }
+  }
+
+  button {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: $primary-color;
+    color: $tertiary-color;
+    &:disabled {
+      background-color: $disabled-color;
+    }
+  }
+
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.summary{
+  margin-top: 10vh;
+}
