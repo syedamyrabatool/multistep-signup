@@ -1,12 +1,19 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+
 Its basically a muti-step sign up form that provides the opportunity to capture the following details from new customer 
+
 First Name,
+
 Last Name,
+
 Phone Number,
+
 Email,
+
 Country 
+
 and Review the information summary before submission.
 
 Its created using React/Typescript/SCSS and is custom built.
