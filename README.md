@@ -29,3 +29,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+
+## Further Enhancements:
+
+1. Accessibility
+
+2. More Styled internal Components
+
+3. Better stage representation with a bar on top 
+
+4. SMS/Email Verification Code Screen can be implemented
+
+
